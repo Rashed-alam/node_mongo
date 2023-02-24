@@ -11,7 +11,7 @@ router.post('/send-verification-email', userController.sendEmailVerificationMail
 router.post('/verify-email', userController.verifyEmail);
 router.post('/forget-pass', userController.forgotPassword);
 router.post('/reset-pass', userController.resetPassword);
-router.post('/change-password', authorize, userController.verifyEmail);
+router.post('/change-password', authorize, userController.changePassword);
 router.get('/get-profile', userController.getProfile);
 
 module.exports = router;
