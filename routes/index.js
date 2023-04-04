@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   console.log('hello');
   // res.send('server working fine');
-  return res.status(200).json({ message: "Uerver working fine" });
+  return res.status(200).json({ message: "server working fine" });
   // res.render('index', { title: 'Express' });
 });
 
